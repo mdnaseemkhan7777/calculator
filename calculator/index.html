@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form name="myform">
+        <input type="text" name="fst"><br><br>
+        <input type="text" name="snd"><br><br>
+        <input type="button" name="" value="ADD" onclick="add()">
+        <input type="button" name="" value="Subtract"onclick="Subtract()">
+        <input type="button" name="" value="Multiply"onclick="Multiply()">
+        <input type="button" name="" value="Divide"onclick="Divide()"> <br><br>
+        <input type="text" name="result">
+
+    </form>
+    <script type="text/javascript">
+        function add(){
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst+snd;
+            myform.result.value=result;
+           
+        }
+        function Subtract(){
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst-snd;
+            myform.result.value=result;
+        }
+        function Multiply(){
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst*snd;
+            myform.result.value=result;
+        }
+        function Divide(){
+            fst=parseInt(myform.fst.value);
+            snd=parseInt(myform.snd.value);
+            result=fst/snd;
+            myform.result.value=result;
+        }
+    </script>
+</body>
+</html>
